@@ -12,7 +12,8 @@ export const ProductPage = () => {
       {/* Filtro */}
       <Opacity />
 
-      <Product product={product!} />
+      {/* <Product product={product!} /> */}
+      {product ? <Product product={product} /> : <NotFound />}
     </>
   );
 };
