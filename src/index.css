@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-title: "Dancing Script", cursive;
+}
+
+
+body,
+#root {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: var(--font-title);
+}
+
+.App-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Routes {
+  flex: 1;
+}
+
+.link-style::after {
+  content: "";
+  background: #2e8b57;
+  width: 50%;
+  height: 5px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+
+}
